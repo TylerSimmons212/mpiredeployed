@@ -1,0 +1,64 @@
+img{
+    width: 150px;
+}
+a{
+    color: rgba(18,18,18,0.9);
+    text-decoration: none;
+}
+.nav{
+    background-color: rgba(18,18,18,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    z-index: 5;
+    position: fixed;
+    width: 100vw;
+}
+.contactbtntxt{
+    border-radius: 50px;
+}
+.spacer{
+    margin-right: 40px;
+    margin-left: -70px;
+}
+.spacer a{
+    border-radius: 50px;
+}
+.contactbtn a{
+    border-radius: 50px;
+}
+.menuicon{
+    color: white;
+    margin-left: 20px;
+}
+.menuicon:hover{
+    color: #D19737;
+}
+.listitem{
+    height: 75px
+}
+.MuiButton-contained{
+    background-color: #D19737 !important;
+    border-radius: 50px;
+    color: white !important;
+}
+.contactbtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media(max-width: 700px){
+    .spacer{
+        margin-right: 20px;
+        margin-left: -50px;
+    }
+    .spacer a{
+        font-size: 10px;
+    }
+    .nav img{
+        width: 30%;
+    }
+}
