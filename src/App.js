@@ -3,7 +3,7 @@ import Nav from './Components/Nav/Nav';
 import Hero from './Components/Hero/Hero';
 import UsvOthers from './Components/UsvOthers/Usvothers';
 import Capabilities from './Components/OurCapabilities/Capabilities';
-
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
     {/* Our Capabilities */}
     <Capabilities />
     {/* Footer */}
+    <Footer />
     </div>
   );
 }
