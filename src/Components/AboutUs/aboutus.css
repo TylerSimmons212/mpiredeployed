@@ -1,0 +1,26 @@
+.aboutus{
+    background-image: url('../../images/aboutusbg.png'); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin: 0;
+    padding: 0;
+}
+.aboutus h2{
+    margin: 0;
+    padding-top: 180px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fc3535;
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: bold;
+}
+.aboutus h1{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 800;
+}
