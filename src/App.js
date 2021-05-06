@@ -4,6 +4,7 @@ import Hero from './Components/Hero/Hero';
 import UsvOthers from './Components/UsvOthers/Usvothers';
 import Capabilities from './Components/OurCapabilities/Capabilities';
 import Footer from './Components/Footer/Footer';
+import AboutUs from './Components/AboutUs/Aboutus';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     {/* Us VS Other */}
     <UsvOthers />
     {/* About US */}
+    <AboutUs />
     {/* Brands Results */}
     {/* Our Capabilities */}
     <Capabilities />
