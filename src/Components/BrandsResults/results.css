@@ -112,7 +112,7 @@ h1{
 @media screen and (max-width: 768px) {
     .carousel-wrapper {
         width: 100vw;
-        height: 425px;
+        height: 450px;
    }
     .carousel-container {
         width: 95vw;
