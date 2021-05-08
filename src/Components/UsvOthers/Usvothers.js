@@ -107,10 +107,7 @@ function getStepText(step) {
       Though we love to be open about ideas on how to better scale your brand for success.
       `;
     case 4:
-      return `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`;
+      return ``;
     default:
       return 'Unknown step';
   }
@@ -161,6 +158,31 @@ export default function FullWidthTabs() {
               <Typography className="steptitle">{getStepTitle(index)}</Typography>
               <Typography className="stepsubtitle">{getStepSubTitle(index)}</Typography>
               <Typography className="steptext">{getStepText(index)}</Typography>
+              {index == 4?<div className="pricingcontent">
+                  <div className="halfbox">
+                    <h2>$1,000/Mo</h2>
+                    <p>- Creative Work (with expectations) - SMS Management</p>
+                    <p>- Consulting (1hr/week) $250/hr</p>
+                  </div>
+                  <div className="halfbox">
+                    <h2>$3,000/Mo</h2>
+                    <p>- Single Platform Ad Management (eg. Facebook)</p>
+                  </div>
+                  <div className="halfbox">
+                    <h2>$4,000/Mo</h2>
+                    <p>- 2 Platform Ad Management (eg. Facebook, Google)</p>
+                  </div>
+                  <div className="halfbox">
+                    <h2>$5,000/Mo</h2>
+                    <p>- 3+ Platform Ad Management (eg. Facebook, Google, Pinterest)</p>
+                  </div>
+                  <div className="fullbox">
+                    <h2>One-Time Pay</h2>
+                    <p>- Audits (Each Ad Account $500)</p>
+                    <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
+                  </div>
+                  
+                </div>:null}
               <div className={classes.actionsContainer}>
                 <div>
                   <Button
@@ -170,14 +192,24 @@ export default function FullWidthTabs() {
                   >
                     Back
                   </Button>
+                  {activeStep === steps.length - 1 ? 
+                     
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={handleReset}
+                    className={classes.button}
+                  >
+                    Reset
+                  </Button>: 
                   <Button
                     variant="contained"
                     color="primary"
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                  </Button>
+                    Next
+                  </Button>}
                 </div>
               </div>
             </StepContent>
