@@ -1,114 +1,148 @@
-
-.container {
-    position: relative;
-    width: 320px;
-    margin: 20px auto 0 auto;
-    perspective: 1000px;
+.results{
+    background-color: #141414;
+    padding: 50px 0 20px 0;
 }
-
-.carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d; 
-    animation: rotate360 90s infinite forwards linear;    
-}
-
-.carousel__face { 
-    position: absolute;
-    width: 400px;
-    height: 275px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+.carousel-wrapper {
+    background-color: white;
+    width: 520px;
+    height: 550px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    justify-content: space-evenly;
+    box-shadow: 5px 5px 25px 0px rgba(229, 231, 232, 0.2);
+    border-radius: 20px;
+    margin: 50px auto 20px;
 }
-.carousel__face img{ 
-    width: 150px;
-    padding: 0;
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.resultstitle{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(215,159,66);
+    background: linear-gradient(217deg, rgba(215,159,66,1) 0%, rgba(240,201,137,1) 33%, rgba(215,159,66,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding: 0px;
+    font-size: 25px;
     margin: 0;
 }
-.carousel__face h1 {
-    font-size: 2rem;
-    color: #fefefe;
-    padding: 0;
-    margin: 0;
+.slidecontent h1{
+    font-size: 25px;
 }
-.carousel__face p {
-    color: #fefefe;
-    padding: 0;
-    margin: 0;
+.slidecontent p{
+    padding: 0 15px;
+    font-size: 16px;
 }
-  
-  
-.carousel__face:nth-child(1) {
-background-image: url("../../images/brandimages/jeunesse.jpg");
-transform: rotateY(  0deg) translateZ(430px); }
-.carousel__face:nth-child(2) { 
-background-image: url("../../images/brandimages/poopourri.jpg");
-    transform: rotateY( 60deg) translateZ(430px); }
-.carousel__face:nth-child(3) {
-background-image: url("../../images/brandimages/creditrepair.jpg");
-transform: rotateY( 120deg) translateZ(430px); }
-.carousel__face:nth-child(4) {
-background-image: url("../../images/brandimages/transparentlabs.png");
-transform: rotateY(180deg) translateZ(430px); }
-.carousel__face:nth-child(5) { 
-background-image: url("../../images/brandimages/buckedup.jpg");
-transform: rotateY(240deg) translateZ(430px); }
-.carousel__face:nth-child(6) { 
-background-image: url("../../images/brandimages/mrcool.jpg");
-transform: rotateY(300deg) translateZ(430px); }
-  
-  
-  
-@keyframes rotate360 {
-from {
-    transform: rotateY(0deg);
+.logodiv{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7228637413394919) 0%, rgba(255,255,255,0) 100%);
+    padding-top:20px;
+    margin-bottom: -20px;
 }
-to {
-    transform: rotateY(-360deg);
+.carousel-container {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    margin: 0 auto;
 }
+.carousel {
+    display: flex;
+    width: 2400px;
+    animation: sliding 90s infinite;
 }
-  
-@media(max-width: 700px){
+.carousel div {
+    width: 450px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.carousel:hover {
+    animation-play-state: paused;
+}
+.carousel .image-one {
+    background-image: url("../../images/brandimages/poopourri.jpg");
+}
+.carousel .image-two {
+    background-image: url("../../images/brandimages/transparentlabs.png");
+}
+.carousel .image-three {
+    background-image: url("../../images/brandimages/buckedup.jpg");
+}
+.carousel .image-four {
+    background-image: url("../../images/brandimages/mrcool.jpg");
+}
+.carousel .image-five {
+    background-image: url("../../images/brandimages/jeunesse.jpg");
+}
+.carousel .image-six {
+    background-image: url("../../images/brandimages/creditrepair.jpg");
+}
+@keyframes sliding {
+    0% {
+        transform: translateX(0);
+   }
+    8% {
+        transform: translateX(0);
+   }
+    20% {
+        transform: translateX(-450px);
+   }
+    35% {
+        transform: translateX(-900px);
+   }
+    50% {
+        transform: translateX(-1350px);
+   }
+    65% {
+        transform: translateX(-1800px);
+   }
+    78% {
+        transform: translateX(-2250px);
+   }
+    100% {
+        transform: translateX(0);
+   }
+
+}
+@media screen and (max-width: 768px) {
+    .carousel-wrapper {
+        width: 312px;
+        height: 210px;
+   }
+    .carousel-container {
+        width: 240px;
+        height: 150px;
+   }
     .carousel {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d; 
-        animation: rotate360 120s infinite forwards linear;    
-    }
-    .carousel__face { 
-        position: absolute;
-        width: 80%;
-        height: 300px;
-        top: 20px;
-        left: 10px;
-        right: 10px;
-        background-size: cover;
-        box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        justify-content: space-evenly;
-    }
-    .carousel__face img{ 
-        width: 150px;
-        padding: 0;
-        margin: 0;
-    }
-    .carousel__face h1 {
-        font-size: 2rem;
-        color: #fefefe;
-        padding: 0;
-        margin: 0;
-    }
+        width: 720px;
+   }
+    .carousel > div {
+        width: 240px;
+        height: 150px;
+   }
+    @keyframes sliding {
+        30% {
+            transform: translateX(0);
+       }
+        35% {
+            transform: translateX(-240px);
+       }
+        65% {
+            transform: translateX(-240px);
+       }
+        70% {
+            transform: translateX(-480px);
+       }
+        98% {
+            transform: translateX(-480px);
+       }
+        100% {
+            transform: translateX(0);
+       }
+   }
 }
