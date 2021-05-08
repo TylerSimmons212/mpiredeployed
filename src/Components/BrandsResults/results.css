@@ -52,7 +52,7 @@ h1{
 }
 .carousel {
     display: flex;
-    width: 2400px;
+    width: 2700px;
     animation: sliding 90s infinite;
 }
 .carousel div {
@@ -111,35 +111,40 @@ h1{
 }
 @media screen and (max-width: 768px) {
     .carousel-wrapper {
-        width: 312px;
-        height: 210px;
+        width: 100vw;
+        height: 425px;
    }
     .carousel-container {
-        width: 240px;
-        height: 150px;
+        width: 95vw;
    }
     .carousel {
-        width: 720px;
+        width: 570vw;
    }
-    .carousel > div {
-        width: 240px;
-        height: 150px;
-   }
+
+   .carousel div {
+        width: 95vw;
+    }
     @keyframes sliding {
-        30% {
+        0% {
             transform: translateX(0);
        }
+        8% {
+            transform: translateX(0);
+       }
+        20% {
+            transform: translateX(-95vw);
+       }
         35% {
-            transform: translateX(-240px);
+            transform: translateX(-190vw);
+       }
+        50% {
+            transform: translateX(-285vw);
        }
         65% {
-            transform: translateX(-240px);
+            transform: translateX(-380vw);
        }
-        70% {
-            transform: translateX(-480px);
-       }
-        98% {
-            transform: translateX(-480px);
+        78% {
+            transform: translateX(-475vw);
        }
         100% {
             transform: translateX(0);
