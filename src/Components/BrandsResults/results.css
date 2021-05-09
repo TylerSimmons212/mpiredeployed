@@ -113,6 +113,7 @@ h1{
     .carousel-wrapper {
         width: 100vw;
         height: 450px;
+        padding-top: 10px;
    }
     .carousel-container {
         width: 95vw;
