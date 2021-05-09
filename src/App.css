@@ -36,9 +36,6 @@
     transform: rotate(360deg);
   }
 }
-html {
-  scroll-behavior: smooth;
-}
 html,body
 {
     width: 100%;
@@ -46,4 +43,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+}
+html {
+  scroll-behavior: smooth;
 }
