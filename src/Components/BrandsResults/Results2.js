@@ -9,7 +9,7 @@ import jeunesse from '../../images/brandimages/jeunesselogo.png';
 import creditrepair from '../../images/brandimages/creditrepairlogo.png';
 
 const MyCarousel = () => (
-    <div className="results">
+    <div className="results" id="results">
         <h1 className="resultstitle">BRANDS WE'VE WORKED WITH & THEIR RESULTS</h1>
         <div className="carousel-wrapper">
         <div className="carousel-container">
