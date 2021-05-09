@@ -41,6 +41,7 @@ a{
 .MuiButton-contained{
     background-color: #D19737 !important;
     border-radius: 50px;
+    box-shadow: none;
     color: white !important;
 }
 .contactbtn{
