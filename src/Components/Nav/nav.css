@@ -23,10 +23,10 @@ a{
     margin-left: -70px;
 }
 .spacer a{
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .contactbtn a{
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .menuicon{
     color: white;
@@ -39,8 +39,8 @@ a{
     height: 75px
 }
 .MuiButton-contained{
-    background-color: #D19737 !important;
-    border-radius: 50px;
+    background-color: #f24462 !important;
+    border-radius: 10px;
     box-shadow: none;
     color: white !important;
 }
