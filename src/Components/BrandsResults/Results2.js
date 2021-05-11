@@ -1,5 +1,7 @@
 import React from 'react';
 import './results.css';
+import Button from '@material-ui/core/Button';
+
 // Brand Logos
 import poopouri from '../../images/brandlogos/poo-pourri.png';
 import transparentlabs from '../../images/brandlogos/transparentlabs.png';
@@ -9,7 +11,7 @@ import jeunesse from '../../images/brandimages/jeunesselogo.png';
 import creditrepair from '../../images/brandimages/creditrepairlogo.png';
 
 const MyCarousel = () => (
-    <div className="results" id="results">
+    <div className="results">
         <h1 className="resultstitle">BRANDS WE'VE WORKED WITH & THEIR RESULTS</h1>
         <div className="carousel-wrapper">
         <div className="carousel-container">
@@ -70,7 +72,11 @@ const MyCarousel = () => (
           </div>
         </div>
         </div>
-              
+        <div className="contactbtn">
+            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
+                WORK WITH US
+            </Button>
+          </div>
         </div>
 
     </div>      
