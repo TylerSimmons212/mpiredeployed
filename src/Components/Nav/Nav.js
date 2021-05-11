@@ -81,8 +81,8 @@ const Nav = (props) => {
           </List>
           <Divider />
           <div className="contactbtn">
-            <Button variant="contained" href="#contained-buttons" className="contactbtntxt">
-                WORK WITH US
+            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
+                CONTACT US
             </Button>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Nav = (props) => {
         <img src={logo} alt="mpire logo" />
         <div class="spacer">
           <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
-                  LETS CHAT
+                  CONTACT US
           </Button>
         </div>
     </div>
