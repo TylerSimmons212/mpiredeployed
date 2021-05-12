@@ -18,7 +18,7 @@ const MyCarousel = (props) => (
         <div className="carousel">
           <div className="image-one image-slide">
               <div className="logodiv">
-                  <img src={poopouri} />
+                  <img src={poopouri} alt="poopouri"/>
               </div>
               <div className="slidecontent">
                   <h1>Successful new product launch.</h1>
@@ -27,7 +27,7 @@ const MyCarousel = (props) => (
           </div>
           <div className="image-two image-slide">
               <div className="logodiv">
-                  <img src={transparentlabs} />
+                  <img src={transparentlabs} alt="transparentlabs"/>
               </div>
               <div className="slidecontent">
                   <h1>6Xing a multi-million company</h1>
@@ -36,7 +36,7 @@ const MyCarousel = (props) => (
           </div>
           <div className="image-three image-slide">
               <div className="logodiv">
-                  <img src={buckedup} />
+                  <img src={buckedup} alt="buckedup"/>
               </div>
               <div className="slidecontent">
                   <h1>Outperformed every other ad agency.</h1>
@@ -45,7 +45,7 @@ const MyCarousel = (props) => (
           </div>
           <div className="image-four image-slide">
               <div className="logodiv">
-                  <img src={mrcool} />
+                  <img src={mrcool} alt="mrcool"/>
               </div>
               <div className="slidecontent">
                   <h1>From $10M to $26M</h1>
@@ -54,7 +54,7 @@ const MyCarousel = (props) => (
           </div>
           <div className="image-five image-slide">
               <div className="logodiv">
-                  <img src={jeunesse} />
+                  <img src={jeunesse} alt="jeunesse"/>
               </div>
               <div className="slidecontent">
                   <h1>Scaled to $45k/day Profitably</h1>
@@ -63,7 +63,7 @@ const MyCarousel = (props) => (
           </div>
           <div className="image-six image-slide">
               <div className="logodiv">
-                  <img src={creditrepair} />
+                  <img src={creditrepair} alt="creditrepair"/>
               </div>
               <div className="slidecontent">
                   <h1>80% Decrease in Cost per Lead</h1>
