@@ -158,7 +158,7 @@ const FullWidthTabs = (props) => {
               <Typography className="steptitle">{getStepTitle(index)}</Typography>
               <Typography className="stepsubtitle">{getStepSubTitle(index)}</Typography>
               <Typography className="steptext">{getStepText(index)}</Typography>
-              {index == 4?<div className="pricingcontent">
+              {index === 4?<div className="pricingcontent">
                   <div className="halfbox">
                     <h2>$1,000/Mo</h2>
                     <p>- Creative Work (with expectations) - SMS Management</p>
