@@ -10,7 +10,7 @@ import mrcool from '../../images/brandlogos/mrcool.svg';
 import jeunesse from '../../images/brandimages/jeunesselogo.png';
 import creditrepair from '../../images/brandimages/creditrepairlogo.png';
 
-const MyCarousel = () => (
+const MyCarousel = (props) => (
     <div className="results">
         <h1 className="resultstitle">BRANDS WE'VE WORKED WITH & THEIR RESULTS</h1>
         <div className="carousel-wrapper">
@@ -73,7 +73,7 @@ const MyCarousel = () => (
         </div>
         </div>
         <div className="contactbtn">
-            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
+            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
                 WORK WITH US
             </Button>
           </div>
