@@ -31,7 +31,7 @@ const Nav = (props) => {
     const [state, setState] = React.useState({
         left: false,
     });
-
+ 
     useEffect(() => {
 
     }, [])
@@ -81,7 +81,7 @@ const Nav = (props) => {
           </List>
           <Divider />
           <div className="contactbtn">
-            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
+            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
                 CONTACT US
             </Button>
           </div>
@@ -98,7 +98,7 @@ const Nav = (props) => {
         </React.Fragment>
         <img src={logo} alt="mpire logo" />
         <div class="spacer">
-          <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt">
+          <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
                   CONTACT US
           </Button>
         </div>
