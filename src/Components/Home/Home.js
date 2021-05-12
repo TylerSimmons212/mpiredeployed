@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Button from '@material-ui/core/Button';
 
 import Nav from '../Nav/Nav';
 import Hero from '../Hero/Hero';
