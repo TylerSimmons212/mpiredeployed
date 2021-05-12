@@ -128,8 +128,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
 }));
+const FullWidthTabs = (props) => {
 
-export default function FullWidthTabs() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
@@ -227,10 +227,12 @@ export default function FullWidthTabs() {
       
       </div>
       <div className="contactbtn">
-            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt2">
+            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt2">
                   WORK WITH US
             </Button>
         </div>
     </div>
   );
 }
+
+export default FullWidthTabs
