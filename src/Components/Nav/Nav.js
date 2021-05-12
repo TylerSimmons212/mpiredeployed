@@ -99,7 +99,7 @@ const Nav = (props) => {
         <img src={logo} alt="mpire logo" />
         <div class="spacer">
           <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
-                  CONTACT US
+                  CONTACT
           </Button>
         </div>
     </div>
