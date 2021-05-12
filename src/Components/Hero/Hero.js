@@ -21,7 +21,7 @@ const Hero = (props) => {
         <h2>We Aren't An Ad Agency,<br/> We Are An Extension Of Your Team.</h2>
         <p>We also happen to be brothers with a reputation of over $300m in trackable sales collectively.</p>
         <div className="contactbtn">
-            <Button variant="contained" href="mailto: braden@mpire.media" className="contactbtntxt2">
+            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt2">
                   LETS CHAT
             </Button>
         </div>
