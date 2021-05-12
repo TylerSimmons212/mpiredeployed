@@ -73,7 +73,7 @@ const MyCarousel = (props) => (
         </div>
         </div>
         <div className="contactbtn">
-            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
+            <Button variant="contained" onClick={() => { props.setForm(true) }} id="workwithusbtn">
                 WORK WITH US
             </Button>
           </div>
