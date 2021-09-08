@@ -8,7 +8,7 @@ import './hero2.css';
 
 
 
-const Hero = (props) => {
+const Hero2 = (props) => {
     const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,
     STAR_SIZE = 3,
     STAR_MIN_SCALE = 0.2,
@@ -250,4 +250,4 @@ function onMouseLeave() {
     )
 }
 
-export default Hero
+export default Hero2
