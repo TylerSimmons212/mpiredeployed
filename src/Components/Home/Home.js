@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Nav from '../Nav/Nav';
-import Hero2 from '../Hero/Hero2';
+import Hero from '../Hero/Hero';
 import Brands2 from '../Brands/Brands2';
 import UsvOthers from '../UsvOthers/Usvothers';
 import Results from '../BrandsResults/Results2';
@@ -24,7 +24,7 @@ const Home = (props) => {
         <div className = 'home' >
         <Nav setForm={setForm}/>
         {form?<Form setForm={setForm}/>:<div>
-            <Hero2 setForm={setForm}/>
+            <Hero setForm={setForm}/>
             <Brands2 />
             <UsvOthers setForm={setForm}/>
             <AboutUs2 />
