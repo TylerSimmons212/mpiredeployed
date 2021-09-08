@@ -1,12 +1,12 @@
 .usvothers{
-    background-color: #141414;
+    background-color: #ECF0F1;
 
     /* margin-top: 20px; */
     padding-bottom: 40px;
 }
 .MuiStepper-vertical{
     /* background-color: #212121; */
-    background: rgba( 0, 0, 0, 0.35 ) !important;
+    background: rgba( 0, 0, 0, 0.8 ) !important;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.0px );
     -webkit-backdrop-filter: blur( 5.0px );
@@ -16,14 +16,7 @@
 
 #usvotherstitle{
     font-family: 'Montserrat', sans-serif;
-    background: rgb(215,159,66);
-    background: linear-gradient(217deg, rgba(215,159,66,1) 0%, rgba(240,201,137,1) 33%, rgba(215,159,66,1) 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    color: #DBA54D;
     padding: 30px;
     margin: 0;
 }
