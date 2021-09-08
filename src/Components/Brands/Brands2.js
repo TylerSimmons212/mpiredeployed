@@ -17,6 +17,7 @@ const Brands2 = (props) => {
   
     return ( 
     <div class="slider">
+        <p>Recognizable Brands We’ve Worked With</p>
         <div class="slide-track">
             <div class="slide">
                 <img src={poopouri} alt="poopouri"/>
