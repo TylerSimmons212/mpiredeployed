@@ -5,7 +5,7 @@ import Hero from '../Hero/Hero';
 import Brands2 from '../Brands/Brands2';
 import UsvOthers from '../UsvOthers/Usvothers';
 import Results from '../BrandsResults/Results2';
-import AboutUs from '../AboutUs/Aboutus';
+import AboutUs2 from '../AboutUs/Aboutus2';
 import Capabilities from '../OurCapabilities/Capabilities';
 import Footer from '../Footer/Footer';
 import Form from '../Form/Form';
@@ -27,7 +27,7 @@ const Home = (props) => {
             <Hero setForm={setForm}/>
             <Brands2 />
             <UsvOthers setForm={setForm}/>
-            <AboutUs />
+            <AboutUs2 />
             <Results setForm={setForm}/>
             <Capabilities />
         </div>}
