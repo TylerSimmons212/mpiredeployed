@@ -42,6 +42,7 @@
     font-weight: 500;
     color: rgba( 0, 0, 0, 0.8 );
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 }
 .slider::before, .slider::after {
     background: linear-gradient(to right, rgba(236, 240, 241, 1) 0%, rgba(255, 255, 255, 0) 100%);
