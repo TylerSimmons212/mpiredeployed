@@ -48,3 +48,31 @@
     line-height: 25px;
     font-size: 14px;
 }
+@media(max-width: 750px){
+    .aboutus{
+        flex-direction: column-reverse;
+    }
+    .aboutuscontent{
+        width: 100%;
+    }
+    .aboutusimg{
+        width: 100%;
+        background-image: url('../../images/DSC02151.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+    }
+    .aboutus h2{
+        font-size: 20px;
+        line-height: 44px;
+        margin-top: 20px;
+    }
+    .aboutus h1{
+        font-size: 30px;
+    }
+    .aboutus p{
+        text-align: center;
+        font-size: 13px;
+    }
+}
