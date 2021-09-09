@@ -60,7 +60,7 @@ export default function Results3(props) {
 
     return (
         <div className="results">
-            <h1 className="resultstitle">BRANDS WE'VE WORKED WITH & THEIR RESULTS</h1>
+            <h1 className="resultstitle">Some Exciting Case Studies</h1>
             <div className="carousel-wrapper">
                 <div className="carousel-container">
                     <div className="carousel">
