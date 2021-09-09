@@ -13,3 +13,10 @@
 .footer p{
     color: rgb(131, 131, 131);
 }
+@media(max-width:750px){
+    .footer p{
+        font-size: 10px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+}
