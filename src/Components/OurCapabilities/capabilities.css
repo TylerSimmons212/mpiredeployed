@@ -1,7 +1,8 @@
 .capabilities{
-    width:95%;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-top: -50px;
+    padding-top: 20px;
+    background-color: #121212;
+    padding-bottom: 50px;
 }
 .icons{
     display: flex;
@@ -14,7 +15,7 @@
 .icon{
     width: 160px;
     height: 150px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #ECF0F1;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -22,6 +23,19 @@
     flex-direction: column;
     margin-bottom: 15px;
 }
+
+.capabilities h1{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(215,159,66);
+    background: linear-gradient(217deg, rgba(215,159,66,1) 0%, rgba(240,201,137,1) 33%, rgba(215,159,66,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .icon p{
     font-size:12px;
     margin: 10px;
@@ -30,4 +44,12 @@
 .fab, .fas, .far{
     width: 100%;
     font-size: 40px;
+}
+.capabilities-section{
+    margin: 0 40px;
+}
+@media(max-width: 750px){
+    .capabilities{
+        padding-bottom: 10px;
+    } 
 }
