@@ -5,13 +5,13 @@
     padding-bottom: 40px;
 }
 .MuiStepper-vertical{
-    /* background-color: #212121; */
-    background: rgba( 0, 0, 0, 0.8 ) !important;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+    background-color: #ECF0F1 !important;
+    /* background: rgba( 0, 0, 0, 0.8 ) !important; */
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    /* backdrop-filter: blur( 5.0px ); */
+    /* -webkit-backdrop-filter: blur( 5.0px ); */
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 #usvotherstitle{
@@ -31,7 +31,7 @@
 }
 .tabs {
     background-color: #212121;
-    color: #fff;
+    color: #121212;
 }
 .Mui-selected{
     color: #DBA54D !important;
@@ -44,7 +44,7 @@
 }
 .MuiTypography-root h1{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #121212;
     text-align: left;
     font-size: 36px;
     line-height: 44px;
@@ -60,7 +60,7 @@
 }
 .subtitle{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #121212;
     text-align: left;
     font-size: 22px;
     line-height: 23px;
@@ -72,7 +72,7 @@
     font-size: 25px !important;
     line-height: 29px;
     font-weight: bold;
-    color: white;
+    color: #121212;
 }
 .stepsubtitle{
     font-family: 'Montserrat', sans-serif !important;
@@ -80,7 +80,7 @@
     font-size: 22px;
     line-height: 29px;
     font-weight: 500;
-    color: white;
+    color: #121212;
 }
 .steptext{
     font-family: 'Montserrat', sans-serif !important;
@@ -97,13 +97,13 @@
     flex-wrap: wrap;
 }
 .MuiButton-root.Mui-disabled, .MuiStepLabel-label {
-    color: rgba(255, 255, 255, 0.26) !important;
+    /* color: rgba(255, 255, 255, 0.26) !important; */
 }
 .MuiButton-root, .MuiStepLabel-active {
-    color: rgba(255, 255, 255, 0.87) !important;
+    /* color: rgba(255, 255, 255, 0.87) !important; */
 }
 .MuiButton-text:hover {
-    background-color: rgba(255, 255, 255, 0.04) !important;
+    /* background-color: rgba(255, 255, 255, 0.04) !important; */
 }
 .MuiStepIcon-root.MuiStepIcon-completed, .MuiStepIcon-root.MuiStepIcon-active{
     color: #DBa54D !important;
@@ -118,7 +118,7 @@
 }
 .pricingbox h2, .pricingboxbottom h2{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #121212;
     text-align: left;
     font-size: 28px;
     line-height: 44px;
@@ -163,7 +163,7 @@
     padding-right: 0;
 }
 .pricingcontent h2{
-    color: white;
+    color: #121212;
 }
 .pricingcontent p{
     color: #DBa54D;
