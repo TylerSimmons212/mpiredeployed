@@ -18,9 +18,9 @@ const Capabilities = (props) => {
     return ( 
     <div className = 'capabilities' id='capabilities'>
         <h1>Our Capabilities</h1>
-        <div>
-            <h2>Ad Buying</h2>
-            <p>Our core strength is in multi platform ad buying. Below are a list of platforms we have ran ads for our clients on.</p>
+        <div className="capabilities-section">
+            <h2 style={{color:'#ECF0F1'}}>Ad Buying</h2>
+            <p style={{color:'#ECF0F1'}}>Our core strength is in multi platform ad buying. Below are a list of platforms we have ran ads for our clients on.</p>
             <div className='icons'>
                 <div className='icon'>
                     <i class="fab fa-facebook"></i>
@@ -56,9 +56,9 @@ const Capabilities = (props) => {
                 </div>
             </div>
         </div>
-        <div>
-            <h2>Our Strengths</h2>
-            <p>We've been doing ad buying & marketing strategy long enough to know what does & doesn't work. We will help you with the following:</p>
+        <div className="capabilities-section">
+            <h2 style={{color:'#ECF0F1'}}>Our Strengths</h2>
+            <p style={{color:'#ECF0F1'}}>We've been doing ad buying & marketing strategy long enough to know what does & doesn't work. We will help you with the following:</p>
             <div className='icons'>
                 <div className='icon'>
                     <i class="fas fa-bullhorn"></i>
