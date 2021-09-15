@@ -161,7 +161,7 @@ const FullWidthTabs = (props) => {
               {index === 4?<div className="pricingcontent">
                   <div className="halfbox">
                     <h2>$1,000/Mo</h2>
-                    <p>- Creative Work (with expectations) - SMS Management</p>
+                    
                     <p>- Consulting (1hr/week) $250/hr</p>
                   </div>
                   <div className="halfbox">
