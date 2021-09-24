@@ -84,7 +84,7 @@ function Item(props) {
 
             <div className="carousel-slide image-slide" style={{ backgroundImage: `url(${props.item.bgimage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
                 <div className="logodiv">
-                    <img src={props.item.image} alt="company image" />
+                    <img src={props.item.bgimage} alt="company image" />
                 </div>
                 <div className="slidecontent">
                     <h1>{props.item.title}</h1>
