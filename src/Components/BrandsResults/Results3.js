@@ -9,12 +9,12 @@ import mrcool from '../../images/brandlogos/mrcool.svg';
 import jeunesse from '../../images/brandimages/jeunesselogo.png';
 import creditrepair from '../../images/brandimages/creditrepairlogo.png';
 
-import poopouriimage from '../../images/brandimages/poopourri.jpg';
-import transparentlabsimage from '../../images/brandimages/transparentlabs.png';
-import buckedupimage from '../../images/brandimages/buckedup.jpg';
-import mrcoolimage from '../../images/brandimages/mrcool.jpg';
-import jeunesseimage from '../../images/brandimages/jeunesse.jpg';
-import creditrepairimage from '../../images/brandimages/creditrepair.jpg';
+import poopouriimage from '../../images/brandimages/pp.png';
+import transparentlabsimage from '../../images/brandimages/tl.png';
+import buckedupimage from '../../images/brandimages/bu.png';
+import mrcoolimage from '../../images/brandimages/mc.png';
+import jeunesseimage from '../../images/brandimages/je.png';
+import creditrepairimage from '../../images/brandimages/cr.png';
 
 import './results2.css';
 
