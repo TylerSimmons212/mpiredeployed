@@ -177,11 +177,7 @@ const FullWidthTabs = (props) => {
                     <p>- Audits (Each Ad Account $500)</p>
                     <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
                   </div>
-//                   <div className="fullbox">
-//                     <h2>One-Time Pay</h2>
-//                     <p>- Audits (Each Ad Account $500)</p>
-//                     <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
-//                   </div>
+
                   
                 </div>:null}
               <div className={classes.actionsContainer}>
