@@ -169,18 +169,19 @@ const FullWidthTabs = (props) => {
                     <p>- Single Platform Ad Management (eg. Facebook)</p>
                   </div>
                   <div className="halfbox">
-                    <h2>$4,000/Mo</h2>
-                    <p>- 2 Platform Ad Management (eg. Facebook, Google)</p>
+                    <h2>$5,000/Mo</h2>
+                    <p>- Multiple Platform Ad Management (eg. Facebook, Google, Pinterest)</p>
                   </div>
                   <div className="halfbox">
-                    <h2>$5,000/Mo</h2>
-                    <p>- 3+ Platform Ad Management (eg. Facebook, Google, Pinterest)</p>
-                  </div>
-                  <div className="fullbox">
                     <h2>One-Time Pay</h2>
                     <p>- Audits (Each Ad Account $500)</p>
                     <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
                   </div>
+//                   <div className="fullbox">
+//                     <h2>One-Time Pay</h2>
+//                     <p>- Audits (Each Ad Account $500)</p>
+//                     <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
+//                   </div>
                   
                 </div>:null}
               <div className={classes.actionsContainer}>
