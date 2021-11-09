@@ -96,7 +96,7 @@ const Nav = (props) => {
             {list('left')}
           </Drawer>
         </React.Fragment>
-        <img src={logo} alt="mpire logo" />
+        <img src={logo} alt="mpire logo" onClick={() => { props.setForm(false) }} />
         <div class="spacer">
           <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt">
                   CONTACT
