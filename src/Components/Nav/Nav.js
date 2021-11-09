@@ -54,25 +54,25 @@ const Nav = (props) => {
         >
           <List>
 
-              <a href="/#usvothers">
+              <a href="/#usvothers" onClick={() => { props.setForm(false) }}>
                 <ListItem button key='HIGHLIGHTS' className="listitem" >
                   <ListItemText  />
                   <ListItemText primary='HIGHLIGHTS' />
                 </ListItem>
               </a>
-              <a href="/#aboutus">
+              <a href="/#aboutus" onClick={() => { props.setForm(false) }}>
                 <ListItem button key='ABOUT US' className="listitem" >
                   <ListItemText  />
                   <ListItemText primary='ABOUT US' />
                 </ListItem>
               </a>
-              <a href="/#results">
+              <a href="/#results" onClick={() => { props.setForm(false) }}>
                 <ListItem button key='CLIENT RESULTS' className="listitem" >
                   <ListItemText  />
                   <ListItemText primary='CLIENT RESULTS' />
                 </ListItem>
               </a>
-              <a href="/#capabilities">
+              <a href="/#capabilities" onClick={() => { props.setForm(false) }}>
                 <ListItem button key='OUR SERVICES' className="listitem" >
                   <ListItemText  />
                   <ListItemText primary='OUR SERVICES' />
