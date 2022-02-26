@@ -12,6 +12,13 @@ import lotusleggings from '../../images/brandlogos/lotusleggings.png';
 import creditrepair from '../../images/brandlogos/creditrepair.png';
 import tuftneedle from '../../images/brandlogos/tuft&needle.svg';
 import shine from '../../images/brandlogos/shinelogo.png';
+import aeromixer from '../../images/brandlogos/aeromixer.png';
+import goodranchers from '../../images/brandlogos/good-ranchers.png';
+import noknock from '../../images/brandlogos/noknock.png';
+import reinventu from '../../images/brandlogos/reinvent-u.png';
+import sonix from '../../images/brandlogos/sonix.gif';
+import tuned from '../../images/brandlogos/tuned.png';
+import waveblock from '../../images/brandlogos/waveblock.png';
     
 const Brands2 = (props) => {
   
@@ -23,6 +30,27 @@ const Brands2 = (props) => {
             </div>
             <div class="slide">
                 <img src={transparentlabs} alt="transparentlabs"/>
+            </div>
+            <div class="slide">
+                <img src={aeromixer} alt="aeromixer"/>
+            </div>
+            <div class="slide">
+                <img src={goodranchers} alt="goodranchers"/>
+            </div>
+            <div class="slide">
+                <img src={noknock} alt="noknock"/>
+            </div>
+            <div class="slide">
+                <img src={reinventu} alt="reinventu"/>
+            </div>
+            <div class="slide">
+                <img src={sonix} alt="sonix"/>
+            </div>
+            <div class="slide">
+                <img src={tuned} alt="tuned"/>
+            </div>
+            <div class="slide">
+                <img src={waveblock} alt="waveblock"/>
             </div>
             <div class="slide">
                 <img src={buckedup} alt="buckedup"/>
