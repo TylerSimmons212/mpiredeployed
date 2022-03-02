@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav';
 import Hero from '../Hero/Hero';
 import Brands2 from '../Brands/Brands2';
 import UsvOthers from '../UsvOthers/Usvothers';
-import Results from '../BrandsResults/Results3';
+import Results from '../BrandsResults/CaseStudies';
 import AboutUs2 from '../AboutUs/Aboutus2';
 import Capabilities from '../OurCapabilities/Capabilities';
 import Footer from '../Footer/Footer';
