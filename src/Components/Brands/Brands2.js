@@ -19,6 +19,7 @@ import reinventu from '../../images/brandlogos/reinvent-u.png';
 import sonix from '../../images/brandlogos/sonix.gif';
 import tuned from '../../images/brandlogos/tuned.png';
 import waveblock from '../../images/brandlogos/waveblock.png';
+import drip from '../../images/brandlogos/drip-logo.png';
     
 const Brands2 = (props) => {
   
@@ -30,6 +31,9 @@ const Brands2 = (props) => {
             </div>
             <div class="slide">
                 <img src={transparentlabs} alt="transparentlabs"/>
+            </div>
+            <div class="slide">
+                <img src={drip} alt="drip"/>
             </div>
             <div class="slide">
                 <img src={aeromixer} alt="aeromixer"/>
