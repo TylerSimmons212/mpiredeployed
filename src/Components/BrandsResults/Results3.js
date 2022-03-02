@@ -2,35 +2,49 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@material-ui/core'
 
-import poopouri from '../../images/brandlogos/poo-pourri.png';
 import transparentlabs from '../../images/brandlogos/transparentlabs.png';
 import buckedup from '../../images/brandimages/buckeduplogo.png';
 import mrcool from '../../images/brandlogos/mrcool.svg';
-import jeunesse from '../../images/brandimages/jeunesselogo.png';
 import creditrepair from '../../images/brandimages/creditrepairlogo.png';
+import projectsolar from '../../images/brandlogos/projectsolarlogo.png';
+import goodranchers from '../../images/brandlogos/goodrancherslogo.png';
+import jackedfactory from '../../images/brandlogos/jackedfactorylogo.png';
 
-import poopouriimage from '../../images/brandimages/pp.png';
 import transparentlabsimage from '../../images/brandimages/tl.png';
 import buckedupimage from '../../images/brandimages/bu.png';
 import mrcoolimage from '../../images/brandimages/mc.png';
-import jeunesseimage from '../../images/brandimages/je.png';
 import creditrepairimage from '../../images/brandimages/cr.png';
+import projectsolarimage from '../../images/brandimages/projectsolar-main.jpg';
+import goodranchersimage from '../../images/brandimages/goodranchers-main.jpg';
+import jackedfactoryimage from '../../images/brandimages/jackedfactory-main.jpg';
 
 import './results2.css';
 
 export default function Results3(props) {
     let items = [
         {
-            image: poopouri,
-            title: "Successful new product launch.",
-            text: "Our efforts in ad buying cut their traffic costs almost in half and reached their CPA goals. These results helped them drive over $3M in sales that month!",
-            bgimage: poopouriimage
-        },
-        {
             image: transparentlabs,
             title: "6Xing a multi-million company",
             text: "For the last year that the ad has been live, it has maintained a 5:1 blended ROI and taken Transparent Labs from $2M/yr to a whopping $13M/yr in revenue.",
             bgimage: transparentlabsimage
+        },
+        {
+            image: projectsolar,
+            title: "Installed Custom Solar For Over 3,000 Homes In The First Year of launching!",
+            text: "",
+            bgimage: projectsolarimage
+        },
+        {
+            image: goodranchers,
+            title: "Decreased Overall Cost Per Acquisition by 20%",
+            text: "",
+            bgimage: goodranchersimage
+        },
+        {
+            image: jackedfactory,
+            title: "Doubled Overall Revenue",
+            text: "As Jacked factory was solely an amazon brand, we launched their website and drove traffic resulting in doubling their overall revenue.",
+            bgimage: jackedfactoryimage
         },
         {
             image: buckedup,
@@ -43,12 +57,6 @@ export default function Results3(props) {
             title: "From $10M to $26M",
             text: "One summer and 14 million views later, the results were in: sales increased by 260% across the board, from $10M to $26M.",
             bgimage: mrcoolimage
-        },
-        {
-            image: jeunesse,
-            title: "Scaled to $45k/day Profitably",
-            text: "We were able to cut their CPL down 40% which gave them the ability to scale and within 8 weeks reached spends of $45,000 a day!",
-            bgimage: jeunesseimage
         },
         {
             image: creditrepair,
