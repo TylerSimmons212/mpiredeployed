@@ -74,7 +74,7 @@ export default function CaseStudies(props) {
                 - Made an enemy out of the rest of the supplement industry by
                 demonstrating the quality of the TL product.
                 <br />
-                - Created a product demonstration with 2 big a$& blenders that
+                - Created a product demonstration with 2 big a$$ blenders that
                 drove the primary sales message home.
                 <br />
                 - Used a teaser to keep people watching as long as possible, to
