@@ -1,157 +1,97 @@
-.results{
-    background-color: #141414;
-    padding: 50px 0 20px 0;
+@font-face {
+  font-family: Supr;
+  src: url("../../SUPRFont/SUPR.otf");
 }
-.carousel-wrapper {
-    background-color: white;
-    width: 520px;
-    height: 550px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 5px 5px 25px 0px rgba(229, 231, 232, 0.2);
-    border-radius: 20px;
-    margin: 50px auto 20px;
+#results {
+  width: 100%;
+  background-image: url("../../images/Singlelampbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
 }
-h1{
-    font-family: 'Montserrat', sans-serif;
+.cs-slides {
+  width: 85%;
+  max-width: 1400px;
+  margin: 50px auto;
+  margin-top: 10vh;
 }
-.resultstitle{
-    font-family: 'Montserrat', sans-serif;
-    background: rgb(215,159,66);
-    background: linear-gradient(217deg, rgba(215,159,66,1) 0%, rgba(240,201,137,1) 33%, rgba(215,159,66,1) 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    padding: 0px;
-    font-size: 25px;
+.splide__slide img {
+  width: 80%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.splide__progress__bar {
+  background-color: rgb(215, 159, 66);
+  height: 8px;
+  border-radius: 8px;
+}
+.text-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.splide__slide h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  color: #ecf0f1;
+  font-family: Supr, sans-serif;
+}
+.splide__slide p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 22px;
+  color: #ecf0f1;
+  text-align: left;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.splide__progress {
+  width: 80%;
+  margin: 0 auto;
+}
+.splide__pagination__page.is-active {
+  background: rgb(215, 159, 66);
+}
+.splide__pagination {
+  position: initial;
+  margin-top: 10px;
+}
+.resultstitle {
+  font-family: Supr, sans-serif;
+  font-size: 50px;
+  color: #dba54d;
+  margin-top: -50px;
+  margin-left: -50%;
+}
+.splide__arrow {
+  background: transparent;
+  width: 2em;
+  height: 2em;
+}
+.splide__arrow svg {
+  width: 2em;
+  height: 2em;
+}
+@media (max-width: 750px) {
+  #results{
+    padding: 0;
+  }
+  .resultstitle {
+    padding: 0;
     margin: 0;
-}
-.slidecontent h1{
-    font-size: 25px;
-}
-.slidecontent p{
-    padding: 0 15px;
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  .cs-slides {
+    width: 95%;
+    margin-top: 150px;
+  }
+  .splide__slide p {
+    width: 95%;
     font-size: 16px;
+  }
 }
-.logodiv{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.7228637413394919) 0%, rgba(255,255,255,0) 100%);
-    padding-top:20px;
-    margin-bottom: -20px;
-}
-.carousel-container {
-    width: 450px;
-    height: 450px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-.carousel {
-    display: flex;
-    width: 2700px;
-    animation: sliding 90s infinite;
-}
-.carousel div {
-    width: 450px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-}
-.carousel:hover {
-    animation-play-state: paused;
-}
-.carousel .image-one {
-    background-image: url("../../images/brandimages/poopourri.jpg");
-}
-.carousel .image-two {
-    background-image: url("../../images/brandimages/transparentlabs.png");
-}
-.carousel .image-three {
-    background-image: url("../../images/brandimages/buckedup.jpg");
-}
-.carousel .image-four {
-    background-image: url("../../images/brandimages/mrcool.jpg");
-}
-.carousel .image-five {
-    background-image: url("../../images/brandimages/jeunesse.jpg");
-}
-.carousel .image-six {
-    background-image: url("../../images/brandimages/creditrepair.jpg");
-}
-@keyframes sliding {
-    0% {
-        transform: translateX(0);
-   }
-    8% {
-        transform: translateX(0);
-   }
-    20% {
-        transform: translateX(-450px);
-   }
-    35% {
-        transform: translateX(-900px);
-   }
-    50% {
-        transform: translateX(-1350px);
-   }
-    65% {
-        transform: translateX(-1800px);
-   }
-    78% {
-        transform: translateX(-2250px);
-   }
-    100% {
-        transform: translateX(0);
-   }
 
-}
-@media screen and (max-width: 768px) {
-    .carousel-wrapper {
-        width: 100vw;
-        height: 500px;
-        padding-top: 10px;
-   }
-    .carousel-container {
-        width: 95vw;
-    }
-    .carousel {
-        width: 570vw;
-    }
-    #workwithusbtn{
-        margin-bottom: 20px;
-    }
-    
-    .carousel div {
-        width: 95vw;
-    }
-    @keyframes sliding {
-        0% {
-            transform: translateX(0);
-       }
-        8% {
-            transform: translateX(0);
-       }
-        20% {
-            transform: translateX(-95vw);
-       }
-        35% {
-            transform: translateX(-190vw);
-       }
-        50% {
-            transform: translateX(-285vw);
-       }
-        65% {
-            transform: translateX(-380vw);
-       }
-        78% {
-            transform: translateX(-475vw);
-       }
-        100% {
-            transform: translateX(0);
-       }
-   }
-}

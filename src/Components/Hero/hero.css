@@ -1,50 +1,47 @@
-.hero h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding-top: 40px;
-    width: 75%;
-    margin: 20px auto;
-    background: rgb(215,159,66);
-    background: linear-gradient(217deg, rgba(215,159,66,1) 0%, rgba(240,201,137,1) 33%, rgba(215,159,66,1) 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+@font-face {
+  font-family: Supr;
+  src: url("../../SUPRFont/SUPR.otf");
 }
-.hero{
-    background-color: #141414;
-    margin: 0;
-    padding: 20px;
-    padding-top: 100px;
+.hero h2 {
+  font-family: Supr, sans-serif;
+  font-size: 50px;
+  padding-top: 40px;
+  width: 75%;
+  margin: 20px auto;
+  color: #dba54d;
+}
+.hero {
+  background-color: #141414;
+  margin: 0;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.hero p {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  color: #858585;
+  width: 75%;
+  margin: 50px auto;
+}
+
+@media (max-width: 700px) {
+  .hero {
     padding-bottom: 50px;
-}
-.hero p{
-    font-size: 22px;
-    line-height: 30px;
-    font-family: 'Montserrat', sans-serif;
+  }
+  .hero h2 {
+    width: 90%;
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
-    color: #858585;
-    width: 75%;
-    margin: 50px auto;
-}
-
-@media(max-width:700px){
-    .hero{
-        padding-bottom: 50px;
-    }
-    .hero h2{
-        width: 90%;
-
-    }
-    .hero p{
-        font-size: 16px;
-        line-height: 25px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        color: #B7B7B7;
-        width: 85%;
-        margin: 30px auto;
-    }
+    color: #b7b7b7;
+    width: 85%;
+    margin: 30px auto;
+  }
 }

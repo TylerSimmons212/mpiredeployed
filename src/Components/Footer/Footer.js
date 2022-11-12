@@ -1,29 +1,18 @@
-import React, {
-    useEffect
-} from 'react';
+import React from "react";
 
-import './footer.css';
-import Logo from '../../images/mpirelogo.png'
+import "./footer.css";
+import Logo from "../../images/MpireMediaM.png";
 
+const Footer = () => {
+  var date = new Date();
+  var year = date.getFullYear();
 
-
-
-const Footer = (props) => {
-  
-
-    useEffect(() => {
-
-    }, [])
-
-    var date = new Date();
-    var year = date.getFullYear();
-
-    return ( 
-    <div className = 'footer' >
-     <img src={Logo} alt='Logo' />
-     <p>Copyright &copy; {year} Mpire Media LLC. All rights reserved.</p>
+  return (
+    <div className="footer">
+      <img src={Logo} alt="Logo" />
+      <p>Copyright &copy; {year} Mpire Media LLC. All rights reserved.</p>
     </div>
-    )
-}
+  );
+};
 
-export default Footer
+export default Footer;

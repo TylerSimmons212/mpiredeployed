@@ -1,75 +1,69 @@
-/* .brands h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 20px;
+@font-face {
+  font-family: Supr;
+  src: url("../../SUPRFont/SUPR.otf");
 }
-.logos {
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.brandcard {
-    height: 75px;
-    width: 80%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-} */
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-   }
-    100% {
-        transform: translateX(calc(-250px * 7));
-   }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 24));
+  }
 }
 .slider {
-    background: #ECF0F1;
-    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-    height: 125px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  background: #ecf0f1;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  height: 125px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
-.slider p{
-    font-size: 15px;
-    font-weight: 500;
-    color: rgba( 0, 0, 0, 0.8 );
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
+.slider p {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Supr, sans-serif;
+  margin-top: 20px;
 }
-.slider::before, .slider::after {
-    background: linear-gradient(to right, rgba(236, 240, 241, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 125px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(236, 240, 241, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 125px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 48);
 }
 .slider .slide {
-    height: 100px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+@media (max-width: 750px) {
+  .slider .slide {
+    margin: 0px;
+    width: 150px;
+  }
 }

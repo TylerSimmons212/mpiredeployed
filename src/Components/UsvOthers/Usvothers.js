@@ -1,235 +1,191 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-// Verticle Stepper Imports
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-import StepContent from '@material-ui/core/StepContent';
-import Paper from '@material-ui/core/Paper';
+import React from "react";
+
+// MUI
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // CSS
-import './usvothers.css';
+import "./usvothers.css";
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={5}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
-
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     backgroundColor: '#424242',
-//   },
-// }));
-
-function getSteps() {
-  return ['Agencies Are Pricey', 'In House Is Pricey', 'Transparency', 'Competitive', 'Our Pricing'];
-}
-
-function getStepTitle(step) {
-  switch (step) {
-    case 0:
-      return `1. Hiring an agency is expensive.`;
-    case 1:
-      return '2. Hiring in-house is expensive.';
-    case 2:
-      return `3. Transparency is more valuable than an ongoing sales pitch.`;
-    case 3:
-      return `4. Competitive`;
-    case 4:
-      return `5. Our Pricing Structure`;
-    default:
-      return 'Unknown step';
-  }
-}
-function getStepSubTitle(step) {
-  switch (step) {
-    case 0:
-      return ``;
-    case 1:
-      return ``;
-    case 2:
-      return ``;
-    case 3:
-      return `(only pay for the services we are currently providing).`;
-    case 4:
-      return ``;
-    default:
-      return 'Unknown step';
-  }
-}
-function getStepText(step) {
-  switch (step) {
-    case 0:
-      return `Agencies typically charge a percentage of ad spend, usually 10-20% with steep minimums to pay their employees.
-
-      Agencies typically only assign one or two junior/mid level experienced employees to your account. All the high level experienced guys get promoted to director level positions and are usually not hands on in your accounts.`;
-    case 1:
-      return `Hiring a truly valuable experienced ad buyer would cost you a MINIMUM $80k salary with all the employee paperwork, insurance, onboarding headaches, and everything else that comes with it. 
-      ‍
-      When you hire us brothers, you get multiple highly experienced advertising brothers for less than the cost of ONE in house employee with a simple signed agreement and a 1099. Lose the headaches.`;
-    case 2:
-      return `We take pride in our relationships as 90% of our clientele has come to us through client referrals. 
-      ‍
-      We always struggled working with agencies that tried to beat around the bush to keep a client thinking things are going well so they can keep you spending money on them.
-      We prefer being upfront about issues and bringing solutions. We have a reputation for being fair with those we work with. 
-      ‍
-      Our relationships need to be mutually beneficial to create lasting relationships and most importantly, friendships. It feels less like work when we help our friends.`;
-    case 3:
-      return `We have a cost effective solution to delivering your needs. We have an a la cart system in the way we charge. We offer a wide range of skill sets outside of just ad buying to ensure success with scaling your brand. 
-      ‍
-      If you want us to only manage Facebook Ads, we will only charge for that. The more work we offer, the less you pay per service delivered. This gives you full control of what you want to be paying for, saving you a lot of money. This helps us clearly understand our position in the relationship with your brand. 
-      
-      Though we love to be open about ideas on how to better scale your brand for success.
-      `;
-    case 4:
-      return ``;
-    default:
-      return 'Unknown step';
-  }
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-  },
-  button: {
-    marginTop: theme.spacing(1),
-    marginRight: theme.spacing(1),
-  },
-  actionsContainer: {
-    marginBottom: theme.spacing(2),
-  },
-  resetContainer: {
-    padding: theme.spacing(3),
-  },
-}));
 const FullWidthTabs = (props) => {
-
-  const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const steps = getSteps();
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
     <div className="usvothers" id="usvothers">
-      <h2 id="usvotherstitle">WORKING WITH US VS THE ALTERNATIVE</h2>
-      <div className={classes.root} id="stepper-container">
-      <Stepper activeStep={activeStep} orientation="vertical" className="stepper">
-        {steps.map((label, index) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
-            <StepContent>
-              <Typography className="steptitle">{getStepTitle(index)}</Typography>
-              <Typography className="stepsubtitle">{getStepSubTitle(index)}</Typography>
-              <Typography className="steptext">{getStepText(index)}</Typography>
-              {index === 4?<div className="pricingcontent">
-                  <div className="halfbox">
-                    <h2>$1,000/Mo</h2>
-                    
-                    <p>- Consulting (1hr/week) $250/hr</p>
-                  </div>
-                  <div className="halfbox">
-                    <h2>$3,000/Mo</h2>
-                    <p>- Single Platform Ad Management (eg. Facebook)</p>
-                  </div>
-                  <div className="halfbox">
-                    <h2>$5,000/Mo</h2>
-                    <p>- Multiple Platform Ad Management (eg. Facebook, Google, Pinterest)</p>
-                  </div>
-                  <div className="halfbox">
-                    <h2>One-Time Pay</h2>
-                    <p>- Audits (Each Ad Account $500)</p>
-                    <p>- Campaign buildout ($3000 / full build + consulting = $4000)</p>
-                  </div>
-
-                  
-                </div>:null}
-              <div className={classes.actionsContainer}>
-                <div>
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={handleBack}
-                    className={classes.button}
-                  >
-                    Back
-                  </Button>
-                  {activeStep === steps.length - 1 ? 
-                     
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleReset}
-                    className="buttonnext"
-                  >
-                    Reset
-                  </Button>: 
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className="buttonnext"
-                  >
-                    Next
-                  </Button>}
-                </div>
-              </div>
-            </StepContent>
-          </Step>
-        ))}
-      </Stepper>
-      {activeStep === steps.length && (
-        <Paper square elevation={0} className={classes.resetContainer}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} className={classes.button}>
-            Reset
-          </Button>
-        </Paper>
-      )}
-      
+      <h2 id="usvotherstitle">QUESTIONS THAT BRING PEOPLE TO US</h2>
+      <div className="accordian">
+        <Accordion className="accordian-item">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className="accordian-title">
+              Why are other agencies so expensive?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Most agencies charge a percentage of ad spend which typically
+              comes around 10 to 20 percent with steep minimums and lengthy
+              contracts.
+              <br />
+              <br />
+              What's wrong with this you might ask? What most people don't know,
+              is that agencies typically only assign one or two junior to
+              mid-level experienced ad buyers to your ad accounts. All the
+              senior level ad buyers get promoted to director level positions
+              and are usually not hands on in your accounts. This ends up
+              costing you more due to junior and mid-level ad buying results.
+              <br />
+              <br />
+              At Mpire Media you get the hive mind of multiple elite level
+              marketing minds on your account at a cost that is actually fair.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordian-item">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography className="accordian-title">
+              Why is hiring in-house such a gamble?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Hiring a truly valuable experienced ad buyer would cost you a
+              minimum 80k salary with all the employee paperwork, insurance,
+              on-boarding headaches, and everything else that comes with it. You
+              won't get a collective mind and you don't know if your hire will
+              meet your needs. Going through the hiring process only to fire
+              someone is quite the pain in the a$$.
+              <br />
+              <br />
+              When you hire us you get multiple elite level experienced ad
+              buyers for less then the cost of one in-house employee, with a
+              simple signed agreement and a 1099. Lose the headache.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordian-item">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3a-content"
+            id="panel3a-header"
+          >
+            <Typography className="accordian-title">
+              Why should I avoid all-in-one agencies?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              One thing we have learned when working with agencies in the past,
+              the agencies who try to do everything; creatives, ad buying, SEO,
+              CRO, Web Development, etc., you get a team that might do good at a
+              thing or two but decent at best on the rest.
+              <br />
+              <br />
+              When you work with teams that specialize in their field of
+              expertise, you actually get experts. This is why we stay our lane
+              of ad buying and have a network of partnered companies we work
+              with that each stay their lane.
+              <br />
+              <br />
+              For example: you will notice with creative agencies, each agency
+              you'll find, has their style that they stick with. Some styles
+              might not be best for your brand. We have a tight relationship
+              with some of the best teams out there and can point you in the
+              direction your data tells us you need to get the results you are
+              looking for.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordian-item">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4a-content"
+            id="panel4a-header"
+          >
+            <Typography className="accordian-title">
+              Why is transparency so important?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              We always struggled working with agencies that tried to beat
+              around the bush to keep a client thinking things are going well so
+              they can keep you spending money on them. We prefer being upfront
+              about issues and bringing solutions. We have a reputation for
+              being fair, and more importantly, honest with those we work with.
+              We treat our clients as if their business was ours because it is.
+              We take pride in our relationships as 90% of our clientele have
+              been client reffered.
+              <br /> <br />
+              Mpire Media exists because we are a group of marketers who enjoy
+              doing what we do because we our good in what we do. If any one of
+              us loses a client, it affects how much those responsible for the
+              account earn. Our ad buyers earn a large part of the earnings to
+              incentivize everyone to perform on their accounts.
+              <br />
+              <br />
+              Our relationships need to be mutually beneficial to create lasting
+              relationships and most importantly, friendships. It feels less
+              like work when we help our friends.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordian-item">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel5a-content"
+            id="panel5a-header"
+          >
+            <Typography className="accordian-title">
+              Why are we so affordable compared to other agencies?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              We have a cost effective solution to delivering your needs. We
+              have an a la cart system in the way we charge. We offer a wide
+              range of skill sets outside of just ad buying to ensure success
+              with scaling your brand.
+              <br />
+              <br /> ‍ If you want us to only manage Facebook Ads, we will only
+              charge for that. The more work we offer, the less you pay per
+              service delivered. This gives you full control of what you want to
+              be paying for, saving you a lot of money. This helps us clearly
+              understand our position in the relationship with your brand.
+              <br />
+              <br />
+              Though we love to be open about ideas on how to better scale your
+              brand for success.
+              <br />
+              <br />
+              Lastly, we don't believe in long term contracts. Long term
+              contracts are for agencies who lack the ability to build trusting
+              relationships through good honest work.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </div>
       <div className="contactbtn">
-            <Button variant="contained" onClick={() => { props.setForm(true) }} className="contactbtntxt2">
-                  WORK WITH US
-            </Button>
-        </div>
+        <Button
+          variant="contained"
+          onClick={() => {
+            props.setForm(true);
+          }}
+          className="contactbtntxt2"
+        >
+          WORK WITH US
+        </Button>
+      </div>
     </div>
   );
-}
+};
 
-export default FullWidthTabs
+export default FullWidthTabs;

@@ -1,39 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import Nav from '../Nav/Nav';
-import Hero from '../Hero/Hero';
-import Brands2 from '../Brands/Brands2';
-import UsvOthers from '../UsvOthers/Usvothers';
-import Results from '../BrandsResults/CaseStudies';
-import AboutUs2 from '../AboutUs/Aboutus2';
-import Capabilities from '../OurCapabilities/Capabilities';
-import Footer from '../Footer/Footer';
-import Form from '../Form/Form';
+import Nav from "../Nav/Nav";
+import Hero from "../Hero/Hero";
+import Brands from "../Brands/Brands";
+import UsvOthers from "../UsvOthers/Usvothers";
+import Results from "../BrandsResults/Results";
+import AboutUs from "../AboutUs/Aboutus";
+import Capabilities from "../OurCapabilities/Capabilities";
+import Footer from "../Footer/Footer";
+import Form from "../Form/Form";
+import Teams from "../TeamsWeWorkWith/TeamsWeWorkWith";
+import OurPricing from "../OurPricing/OurPricing";
 
+const Home = () => {
+  const [form, setForm] = useState(false);
 
+  useEffect(() => {}, [form]);
 
-const Home = (props) => {
-    const [form, setForm] = useState(false)
-
-    useEffect(() => {
-
-    }, [form])
-
-
-    return ( 
-        <div className = 'home' >
-        <Nav setForm={setForm}/>
-        {form?<Form setForm={setForm}/>:<div>
-            <Hero setForm={setForm}/>
-            <Brands2 />
-            <UsvOthers setForm={setForm}/>
-            <AboutUs2 />
-            <Results setForm={setForm}/>
-            <Capabilities />
-        </div>}
-        <Footer />
+  return (
+    <div className="home">
+      <Nav setForm={setForm} />
+      {form ? (
+        <Form setForm={setForm} />
+      ) : (
+        <div>
+          <Hero setForm={setForm} />
+          <Brands />
+          <UsvOthers setForm={setForm} />
+          <Teams />
+          <AboutUs />
+          <Results setForm={setForm} />
+          <OurPricing />
+          <Capabilities />
+        </div>
+      )}
+      <Footer />
     </div>
-    )
-}
+  );
+};
 
-export default Home
+export default Home;

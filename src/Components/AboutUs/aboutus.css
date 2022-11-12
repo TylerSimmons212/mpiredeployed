@@ -1,26 +1,79 @@
-.aboutus{
-    background-image: url('../../images/aboutusbg.png'); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: Supr;
+  src: url("../../SUPRFont/SUPR.otf");
 }
-.aboutus h2{
-    margin: 0;
-    padding-top: 180px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fc3535;
-    font-size: 25px;
-    line-height: 44px;
-    font-weight: bold;
+.aboutus {
+  width: 100%;
+  background-color: #18181b;
 }
-.aboutus h1{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+.aboutus-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.aboutuscontent {
+  width: 50%;
+}
+.aboutusimg {
+  width: 50%;
+  background-image: url("../../images/B&KLand.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60vh;
+}
+.aboutus h2 {
+  margin: 0;
+  font-family: Supr, sans-serif;
+  color: #fc3535;
+  font-size: 25px;
+  line-height: 44px;
+  font-weight: bold;
+}
+.aboutus h1 {
+  margin: 0;
+  font-family: Supr, sans-serif;
+  color: #dba54d;
+  font-size: 50px;
+  line-height: 42px;
+  font-weight: 800;
+}
+.aboutus p {
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d3d4;
+  text-align: left;
+  padding: 20px 40px;
+  line-height: 25px;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 750px) {
+  .aboutus-container {
+    flex-direction: column-reverse;
+  }
+  .aboutuscontent {
+    width: 100%;
+  }
+  .aboutusimg {
+    width: 80%;
+    height: 30vh;
+  }
+  .aboutus h2 {
     font-size: 40px;
-    line-height: 42px;
-    font-weight: 800;
+    line-height: 44px;
+    margin-top: 20px;
+  }
+  .aboutus h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .aboutus p {
+    text-align: center;
+    font-size: 16px;
+  }
 }

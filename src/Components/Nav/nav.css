@@ -1,70 +1,72 @@
-img{
-    width: 150px;
+img {
+  width: 100px;
 }
-a{
-    color: rgba(18,18,18,0.9);
-    text-decoration: none;
+a {
+  color: rgba(18, 18, 18, 0.9);
+  text-decoration: none;
 }
-.nav{
-    background-color: rgba(18,18,18,0.9);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    z-index: 5;
-    position: fixed;
-    width: 100vw;
+.nav {
+  background-color: rgba(18, 18, 18, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  position: fixed;
+  width: 100vw;
 }
-.contactbtntxt{
-    border-radius: 50px;
+.contactbtntxt {
+  border-radius: 50px;
 }
-.spacer{
-    margin-right: 40px;
-    margin-left: -70px;
+.spacer {
+  margin-right: 40px;
+  margin-left: -70px;
 }
-.spacer a{
-    border-radius: 10px;
+.spacer a {
+  border-radius: 10px;
 }
-.contactbtn a{
-    border-radius: 10px;
+.contactbtn a {
+  border-radius: 10px;
 }
-.menuicon{
-    color: white;
-    margin-left: 20px;
+.menuicon {
+  color: white;
+  margin-left: 20px;
 }
-.menuicon:hover{
-    color: #D19737;
+.menuicon:hover {
+  color: #d19737;
 }
-.listitem{
-    height: 75px
+.listitem {
+  height: 75px;
 }
-.MuiButton-contained{
-    background-color: #F22C4E !important;
-    border-radius: 10px;
-    box-shadow: none;
-    color: white !important;
+.MuiButton-contained {
+  background-color: #f22c4e !important;
+  border-radius: 10px;
+  box-shadow: none;
+  color: white !important;
 }
-.contactbtn{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.contactbtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-@media(max-width: 700px){
-    .spacer{
-        margin-right: 10px;
-        margin-left: -50px;
-        width: 100px;
-    }
-    .spacer a{
-        font-size: 10px;
-    }
-    .nav img{
-        width: 30%;
-    }
-    .contactbtntxt{
-        font-size: 10px !important;
-        width: 75px;
-    }
+.nav img {
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .spacer {
+    margin-right: 10px;
+    margin-left: -50px;
+    width: 100px;
+  }
+  .spacer a {
+    font-size: 10px;
+  }
+  .nav img {
+    width: 20%;
+  }
+  .contactbtntxt {
+    font-size: 10px !important;
+    width: 75px;
+  }
 }

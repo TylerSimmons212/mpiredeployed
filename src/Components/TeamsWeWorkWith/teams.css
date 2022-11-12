@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Supr;
+  src: url("../../SUPRFont/SUPR.otf");
+}
+.teams {
+  background: rgb(236, 240, 241);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 240, 241, 1) 0%,
+    rgba(206, 210, 211, 1) 42%,
+    rgba(35, 35, 38, 1) 50%,
+    rgba(24, 24, 27, 1) 100%
+  );
+  margin-top: -50px;
+}
+.teams-content {
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  background-color: #dba54d;
+  padding-bottom: 200px;
+}
+.teams h2 {
+  padding-top: 150px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: #121212;
+  font-family: Supr;
+}
+.container {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 85%;
+  flex-wrap: wrap;
+}
+.wrapper {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.wrapper img {
+  width: 250px;
+}
+#creatably {
+  background-color: #fff;
+}
+#chamber {
+  background-color: #000;
+}
+#filmlaab {
+  background-color: #000;
+}
+#matix {
+  background-color: #fff;
+}
+#revi {
+  background-color: #000;
+}
+#sipo {
+  background-color: #fff;
+}
+@media (max-width: 750px) {
+  .teams-content {
+    padding-bottom: 50px;
+    height: auto;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  }
+  .teams h2 {
+    padding: 20px;
+    padding-top: 80px;
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 95%;
+  }
+  .wrapper {
+    width: 40%;
+    height: 150px;
+  }
+  .wrapper img {
+    width: 90%;
+  }
+}
