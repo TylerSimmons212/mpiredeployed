@@ -118,4 +118,7 @@
   .hb-pricing {
     text-align: right !important;
   }
+  .pricingcontent div {
+    padding: 10px;
+  }
 }
