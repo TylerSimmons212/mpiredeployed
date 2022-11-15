@@ -8,12 +8,11 @@ const Hero = (props) => {
   return (
     <div className="hero">
       <h2>
-        WE ARE AN ELITE GROUP OF MARKETERS BEHIND $400M+ IN ADS WHO LOVE SCALING
-        BRANDS.
+        WE ARE AN ELITE GROUP OF MARKETERS BEHIND $400M+ IN ADS.
       </h2>
       <p>
         With so many problems in traditional ad agency models, we decided to
-        distrupt the industry with a game changing solution.
+        disrupt the industry with a game changing solution.
       </p>
       <div className="contactbtn">
         <Button

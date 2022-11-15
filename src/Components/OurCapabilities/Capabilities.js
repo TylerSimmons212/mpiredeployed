@@ -62,7 +62,7 @@ const Capabilities = (props) => {
                 <div className="card-info-wrapper">
                   <div className="card-info">
                     <div className="card-info-title">
-                      <p>Google (Search, Display, Shopping)</p>
+                      <p>Google</p>
                     </div>
                   </div>
                 </div>
