@@ -6,7 +6,6 @@ import thumbnail from "../../images/mpire_thumbnail.png"
 import "./hero.css";
 
 const Hero = (props) => {
-  console.log(thumbnail)
   return (
     <div className="hero">
       <div className="hero-content">
