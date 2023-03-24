@@ -1,9 +1,6 @@
-.footer {
-  position: fixed;
-  bottom: 0;
-}
 .form {
   padding-top: 50px;
+  min-height: 90vh;
 }
 .sendIcon {
   margin-left: 10px;
