@@ -4,6 +4,7 @@
 }
 .usvothers {
   background-color: #ecf0f1;
+  padding: 0 20px;
   padding-bottom: 40px;
 }
 .accordian {
@@ -33,6 +34,7 @@
   border: solid #dba54d 1.5px;
   background-color: #252525 !important;
   border-radius: 10px !important;
+  margin: 5px auto;
 }
 .MuiStepper-vertical {
   background-color: #ecf0f1 !important;
