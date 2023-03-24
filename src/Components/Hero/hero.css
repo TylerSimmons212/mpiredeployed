@@ -16,6 +16,10 @@
   padding: 20px;
   padding-top: 100px;
   padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 .hero p {
   font-size: 22px;
@@ -26,11 +30,35 @@
   width: 75%;
   margin: 50px auto;
 }
+.video,
+.hero-content {
+  flex-basis: 48%;
+  margin-bottom: 1rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (max-width: 700px) {
-  .hero {
-    padding-bottom: 50px;
+@media (max-width: 1270px) {
+  .video iframe{
+    max-width: 100%;
+    /* height: auto; */
   }
+  .hero-content,
+  .video {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 700px) {
   .hero h2 {
     width: 90%;
     font-size: 40px;
