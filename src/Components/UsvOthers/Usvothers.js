@@ -17,7 +17,7 @@ const FullWidthTabs = (props) => {
       <div className="accordian">
         <Accordion className="accordian-item">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: '#dba54d' }} />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -47,7 +47,7 @@ const FullWidthTabs = (props) => {
         </Accordion>
         <Accordion className="accordian-item">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: '#dba54d' }} />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -73,7 +73,7 @@ const FullWidthTabs = (props) => {
         </Accordion>
         <Accordion className="accordian-item">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: '#dba54d' }} />}
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
@@ -106,7 +106,7 @@ const FullWidthTabs = (props) => {
         </Accordion>
         <Accordion className="accordian-item">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: '#dba54d' }} />}
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
@@ -140,7 +140,7 @@ const FullWidthTabs = (props) => {
         </Accordion>
         <Accordion className="accordian-item">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon style={{ color: '#dba54d' }} />}
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
