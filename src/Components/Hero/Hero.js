@@ -27,7 +27,8 @@ const Hero = (props) => {
         </div>
       </div>
       <div className="video">
-        <YouTube videoId="5vMne4Jc0WM" thumbnail={thumbnail} width="100%" height="auto" />
+        
+        <video src="https://mpiremedia.nyc3.digitaloceanspaces.com/MpireVideo.mp4" controls poster={thumbnail} width="560" height="315"/>
       </div>
     </div>
   );
