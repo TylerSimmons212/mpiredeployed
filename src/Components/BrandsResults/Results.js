@@ -150,7 +150,17 @@ export default function CaseStudies() {
           <SplideSlide>
             <img src={Saalt} alt="Saalt" />
             <div className="text-content">
-              <p></p>
+            <p>
+                - Increased spend from $500/day to 10k/day over the course of 3 months
+                <br />
+                - Increased ROAS from .80 to 1.60 - 2.0 while scaling budgets
+                <br />
+                - Decreased CPCs from $3 - < $1.50 Across Facebook Campaigns
+                <br />
+                - Helped Topline revenue grow 300% MOM primarily though Facebook Ads
+                <br />
+                - Helped create marketing strategy to push higher AOV products resulting in a 40% increase in AOV
+              </p>
             </div>
           </SplideSlide>
           <SplideSlide>
