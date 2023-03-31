@@ -24,6 +24,9 @@ import senya from "../../images/brandlogos/senya.png";
 import vanessa from "../../images/brandlogos/vanessa.png";
 import tamarak from "../../images/brandlogos/tamaraklogo.png";
 import projectsolar from "../../images/brandlogos/projectsolarlogo.png";
+import hypo from "../../images/brandlogos/hypologo.png";
+import peachyinc from "../../images/brandlogos/peachyinclogo.png";
+import spoonful from "../../images/brandlogos/spoonfullogo.png";
 
 const Brands2 = () => {
   return (
@@ -172,6 +175,15 @@ const Brands2 = () => {
         </div>
         <div class="slide">
           <img src={vanessa} alt="vanessa" />
+        </div>
+        <div class="slide">
+          <img src={hypo} alt="Hypo Chlorous Company" />
+        </div>
+        <div class="slide">
+          <img src={peachyinc} alt="Peachy Inc" />
+        </div>
+        <div class="slide">
+          <img src={spoonful} alt="Spoonful of Comfort" />
         </div>
       </div>
     </div>
