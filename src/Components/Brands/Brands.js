@@ -105,6 +105,15 @@ const Brands2 = () => {
           <img src={vanessa} alt="vanessa" />
         </div>
         <div class="slide">
+          <img src={hypo} alt="Hypo Chlorous Company" />
+        </div>
+        <div class="slide">
+          <img src={peachyinc} alt="Peachy Inc" />
+        </div>
+        <div class="slide">
+          <img src={spoonful} alt="Spoonful of Comfort" />
+        </div>
+        <div class="slide">
           <img src={transparentlabs} alt="transparentlabs" />
         </div>
         <div class="slide">
