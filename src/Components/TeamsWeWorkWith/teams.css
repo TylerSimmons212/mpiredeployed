@@ -48,20 +48,14 @@
 #creatably {
   background-color: #fff;
 }
-#chamber {
-  background-color: #000;
-}
 #filmlaab {
-  background-color: #000;
-}
-#matix {
-  background-color: #fff;
-}
-#revi {
   background-color: #000;
 }
 #sipo {
   background-color: #fff;
+}
+#studiio {
+  background-color: #000;
 }
 @media (max-width: 750px) {
   .teams-content {
