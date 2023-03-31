@@ -10,7 +10,7 @@ const OurPricing = (props) => {
         </h2>
         <div className="pricingcontent">
           <div className="halfbox">
-            <h2>Managed Ad Platforms</h2>
+            <h2>Full Service Ad Management</h2>
             <section>
               <p>Single Platform Ad Management (eg. Meta Ads)</p>
               <p className="hb-pricing">$3,000/Mo</p>
@@ -31,14 +31,18 @@ const OurPricing = (props) => {
               <p className="hb-pricing">Each Ad Account $500</p>
             </section>
             <section>
-              <p>Campaign Buildout</p>
+              <p>Campaign Structure Buildout</p>
               <p className="hb-pricing">
-                $3000 / full build + consulting = $4000
+                $2000 for Google & $1000 for Meta
               </p>
             </section>
             <section>
-              <p>Consulting</p>
-              <p className="hb-pricing">(1hr/week) $250/hr</p>
+              <p>We Need Help</p>
+              <p className="hb-pricing">$1500/Mo | 3 month contract with limited services we can discuss</p>
+            </section>
+            <section>
+              <p>Business Manager Clean Up</p>
+              <p className="hb-pricing">$1000 per platform</p>
             </section>
           </div>
         </div>
