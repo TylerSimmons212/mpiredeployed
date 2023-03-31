@@ -15,11 +15,11 @@ const Teams = () => {
           <div class="wrapper" id="creatably">
             <img src={creatably} alt="Creatably" />
           </div>
-          <div class="wrapper" id="filmlaab">
-            <img src={filmlaab} alt="Film Laab" />
-          </div>
           <div class="wrapper" id="sipo">
             <img src={sipstudios} alt="Sipo Studios" />
+          </div>
+          <div class="wrapper" id="filmlaab">
+            <img src={filmlaab} alt="Film Laab" />
           </div>
           <div class="wrapper" id="studiio">
             <img src={studiio} alt="STUDIIO" />
