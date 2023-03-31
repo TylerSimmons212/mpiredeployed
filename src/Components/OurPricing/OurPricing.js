@@ -38,7 +38,7 @@ const OurPricing = (props) => {
             </section>
             <section>
               <p>We Need Help</p>
-              <p className="hb-pricing">$1500/Mo | 3 month contract with limited services we can discuss</p>
+              <p className="hb-pricing" style={{textAlign: "right"}}>$1500/Mo | 3 month contract <br/> with limited services we can discuss</p>
             </section>
             <section>
               <p>Business Manager Clean Up</p>
