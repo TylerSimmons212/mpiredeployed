@@ -8,11 +8,14 @@ import TransparentLabs from "../../images/caseStudies/TransparentLabsWebsiteCase
 import GoodRanchers from "../../images/caseStudies/GoodRanchersWebsiteCaseStudy.png";
 import Mixhers from "../../images/caseStudies/MixhersWebsiteCaseStudy.png";
 import JackedFactory from "../../images/caseStudies/JackedFactoryWebsiteCaseStudy.png";
+import Saalt from "../../images/caseStudies/SaaltCaseStudy.png";
+import Senya from "../../images/caseStudies/SenyaCaseStudy.png";
+import Vanessa from "../../images/caseStudies/VanessaCaseStudy.png";
 import "@splidejs/splide/dist/css/splide.min.css";
 
 import "./results.css";
 
-export default function CaseStudies(props) {
+export default function CaseStudies() {
   return (
     <div className="casestudies" id="results">
       <h1 className="resultstitle">Some Exciting Case Studies</h1>
@@ -104,9 +107,9 @@ export default function CaseStudies(props) {
             <img src={JackedFactory} alt="Jacked Factory" />
             <div className="text-content">
               <p>
-                As Jacked Factory was solely and amazon brand, we launched
-                their website and drove traffic to their website so their brand
-                could expand outside of Amazon and own all their customers that
+                As Jacked Factory was solely and amazon brand, we launched their
+                website and drove traffic to their website so their brand could
+                expand outside of Amazon and own all their customers that
                 purchase through their site. Our efforts resulted in doubling
                 their overall revenue in just the first two months of us
                 managing their campaigns.
@@ -141,6 +144,40 @@ export default function CaseStudies(props) {
                 Facebook, & Youtube
                 <br />- We used a fast pace to keep the viewer interested in
                 technical explanations
+              </p>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Saalt} alt="Saalt" />
+            <div className="text-content">
+              <p></p>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Senya} alt="Senya" />
+            <div className="text-content">
+              <p>
+                - Senya started in the great state of Utah and within the first
+                few months of launching, Senya went from struggling to get sub
+                spots filled to having too many subs capturing the attention of
+                the entire education system throughout Utah. We are now
+                expanding country wide one state at a time repeating this
+                success and we couldn't be more excited for Senya!
+              </p>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <img src={Vanessa} alt="Mr Cool" />
+            <div className="text-content">
+              <p>
+                - Vanessa is a talented Christian Artist who is extremely
+                passionate about bringing the light of Christ into every home
+                through her divinely inspired art.
+                <br />
+                - Within just 3 months of working with her, we successfully scaled
+                her from $40k/mo - $500k/mo growing her out of her little room
+                into a studio ran and managed by a full team behind her! We are
+                super proud of her growth as an artist and business woman!
               </p>
             </div>
           </SplideSlide>
