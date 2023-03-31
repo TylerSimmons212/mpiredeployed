@@ -155,7 +155,7 @@ export default function CaseStudies() {
                 <br />
                 - Increased ROAS from .80 to 1.60 - 2.0 while scaling budgets
                 <br />
-                - Decreased CPCs from $3 - < $1.50 Across Facebook Campaigns
+                - Decreased CPCs from $3 - less than a $1.50 Across Facebook Campaigns
                 <br />
                 - Helped Topline revenue grow 300% MOM primarily though Facebook Ads
                 <br />
