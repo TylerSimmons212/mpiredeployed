@@ -1,18 +1,6 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-
-import mrCool from "../../images/caseStudies/MrCoolWebsiteCaseStudy.png";
-import projectSolar from "../../images/caseStudies/ProjectSolarWebsiteCaseStudy.png";
-import BuckedUp from "../../images/caseStudies/BuckedUpWebsiteCaseStudy.png";
-import TransparentLabs from "../../images/caseStudies/TransparentLabsWebsiteCaseStudy.png";
-import GoodRanchers from "../../images/caseStudies/GoodRanchersWebsiteCaseStudy.png";
-import Mixhers from "../../images/caseStudies/MixhersWebsiteCaseStudy.png";
-import JackedFactory from "../../images/caseStudies/JackedFactoryWebsiteCaseStudy.png";
-import Saalt from "../../images/caseStudies/SaaltCaseStudy.png";
-import Senya from "../../images/caseStudies/SenyaCaseStudy.png";
-import Vanessa from "../../images/caseStudies/VanessaCaseStudy.png";
 import "@splidejs/splide/dist/css/splide.min.css";
-
 import "./results.css";
 
 export default function CaseStudies() {
@@ -33,7 +21,7 @@ export default function CaseStudies() {
           hasAutoplayProgress
         >
           <SplideSlide>
-            <img src={projectSolar} alt="Project Solar" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FProjectSolarWebsiteCaseStudy.png" alt="Project Solar" />
             <div className="text-content">
               <p>
                 - Successfully launched proof of concept through ad spend to
@@ -47,7 +35,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={Mixhers} alt="Mixhers" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FMixhersWebsiteCaseStudy.png" alt="Mixhers" />
             <div className="text-content">
               <p>
                 - INCREASED ROAS .80 TO 2.0 WHILE INCREASING SPEND.
@@ -69,7 +57,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={TransparentLabs} alt="Transparent Labs" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FTransparentLabsWebsiteCaseStudy.png" alt="Transparent Labs" />
             <div className="text-content">
               <p>
                 - $2M TO $18M IN 12 MONTHS
@@ -91,7 +79,7 @@ export default function CaseStudies() {
           </SplideSlide>
 
           <SplideSlide>
-            <img src={GoodRanchers} alt="Good Ranchers" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FGoodRanchersWebsiteCaseStudy.png" alt="Good Ranchers" />
             <div className="text-content">
               <p>
                 When we started, we went into their account to essentially
@@ -104,7 +92,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={JackedFactory} alt="Jacked Factory" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FJackedFactoryWebsiteCaseStudy.png" alt="Jacked Factory" />
             <div className="text-content">
               <p>
                 As Jacked Factory was solely and amazon brand, we launched their
@@ -117,7 +105,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={BuckedUp} alt="Bucked Up" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FBuckedUpWebsiteCaseStudy.png" alt="Bucked Up" />
             <div className="text-content">
               <p>
                 - They ran a campaign with multiple ad agencies to see who would
@@ -131,7 +119,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={mrCool} alt="Mr Cool" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FMrCoolWebsiteCaseStudy.png" alt="Mr Cool" />
             <div className="text-content">
               <p>
                 - $10M TO $167M IN 36 MONTHS WITH NO OUTSIDE MARKETING.
@@ -148,7 +136,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={Saalt} alt="Saalt" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FSaaltCaseStudy.png" alt="Saalt" />
             <div className="text-content">
             <p>
                 - Increased spend from $500/day to 10k/day over the course of 3 months
@@ -164,7 +152,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={Senya} alt="Senya" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FSenyaCaseStudy.png" alt="Senya" />
             <div className="text-content">
               <p>
                 - Senya started in the great state of Utah and within the first
@@ -177,7 +165,7 @@ export default function CaseStudies() {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <img src={Vanessa} alt="Mr Cool" />
+            <img src="https://mpiremedia.nyc3.cdn.digitaloceanspaces.com/case_studies%2Fbrand_images%2FVanessaCaseStudy.png" alt="Mr Cool" />
             <div className="text-content">
               <p>
                 - Vanessa is a talented Christian Artist who is extremely
